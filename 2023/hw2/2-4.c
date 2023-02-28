@@ -7,12 +7,12 @@ int main()
   freopen("a.in","r",stdin);
   scanf("%llu%llu", &x, &m);
   m++;
-  int len = (int)(log(x) / log(2)) + 1;
-  //printf("%d\n", len);
+  int len = (int)(log(1.0f * x) / log(2)) + 1;
+  if(len > 63) len = 63;
   //printf("%lld\n%lld\n", (x >> (m + 1)),((x >> (len - m + 1)) << (len - m + 1)));
-  ll ans = (x >> m) | (x & ((1llu << m) - 1llu)) << (len - m);
+  ll ans = (x >> m) + ((x & ((1llu << m) - 1llu)) << (len - m));
   printf("%llu ", ans);
-  for(int i = 0; i <= len; ++i)
+  for(int i = 0; i < len; ++i)
   {
     if(((1llu << i) & ans) == (1llu << i))
     {

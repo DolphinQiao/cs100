@@ -4,6 +4,7 @@ char a[550], b[550], c, ans[550];
 int main()
 {
   freopen("a.in","r",stdin);
+  freopen("a.out","w",stdout);
   c = getchar();
   scanf("%s", a);
   scanf("%s", b);
@@ -56,7 +57,7 @@ int main()
     ans[i] %= 16;
     //printf("%d ", ans[i]);
   }
-  int len_ans = 0;
+  int len_ans = 1;
   for(int i = len_max; i >= 0; --i)
   {
     if(ans[i] != 0)
@@ -85,12 +86,12 @@ int main()
   }
 
   for(int i = 0; i < len_max - len_a; ++i) printf(" ");
-  for(int i = len_max - len_a; i <= len_max; ++i) printf("%c", a[i - (len_max - len_a)]);
+  for(int i = len_max - len_a; i < len_max; ++i) printf("%c", a[i - (len_max - len_a)]);
   printf("\n");
   printf("%c",c);
   for(int i = 0; i < len_max - len_b - 1; ++i) printf(" ");
 
-  for(int i = len_max - len_b; i <= len_max; ++i) printf("%c", b[i - (len_max - len_b)]);
+  for(int i = len_max - len_b; i < len_max; ++i) printf("%c", b[i - (len_max - len_b)]);
   printf("\n");
   for(int i = 0; i < len_max; ++i) printf("-");
   printf("\n");
@@ -99,7 +100,9 @@ int main()
     for(int i = 0; i < len_max - len_ans - 1; ++i) printf(" ");
     printf("-");
   }
-  for(int i = len_ans + 1; i >= len_max - len_ans; --i) printf("%c", ans[i - (len_max - len_ans)]);
+  //printf("%d\n%d\n",len_max,len_ans);
+  //printf("%d\n",ans[0]);
+  for(int i = len_ans - 1; i >= 0; --i) printf("%c", ans[i]);
 
   return 0;
 }
