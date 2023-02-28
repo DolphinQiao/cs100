@@ -1,0 +1,10 @@
+^E:\CS100\2022\CS100-HW89\BUILD\CMAKEFILES\33C48792B7990BFAAB758D24F50C0C75\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/cs100/2022/CS100-HW89 -BE:/cs100/2022/CS100-HW89/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/cs100/2022/CS100-HW89/build/Dawnbreaker.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

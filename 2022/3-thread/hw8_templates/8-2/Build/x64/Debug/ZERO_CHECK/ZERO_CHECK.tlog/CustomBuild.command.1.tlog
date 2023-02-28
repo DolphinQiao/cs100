@@ -1,0 +1,10 @@
+^E:\CS100\2022\3-THREAD\HW8_TEMPLATES\8-2\BUILD\CMAKEFILES\2F325E0464F332ABE32CF3287E1D109C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/cs100/2022/3-thread/hw8_templates/8-2 -BE:/cs100/2022/3-thread/hw8_templates/8-2/Build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/cs100/2022/3-thread/hw8_templates/8-2/Build/hw8.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

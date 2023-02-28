@@ -1,0 +1,5 @@
+﻿  kmeans.cpp
+E:\cs100\2022\3-thread\hw7_templates\7-3\kmeans.cpp(37,34): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\cs100\2022\3-thread\hw7_templates\7-3\kmeans.cpp(38,36): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\cs100\2022\3-thread\hw7_templates\7-3\kmeans.cpp(163,49): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+  main.vcxproj -> E:\cs100\2022\3-thread\hw7_templates\7-3\Debug\main.exe

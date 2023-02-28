@@ -1,0 +1,6 @@
+﻿  kmeans.cpp
+E:\cs100\2022\3-thread\hw7_templates\7-3\kmeans.cpp(35,41): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\cs100\2022\3-thread\hw7_templates\7-3\kmeans.cpp(36,32): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\cs100\2022\3-thread\hw7_templates\7-3\kmeans.cpp(100,58): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\cs100\2022\3-thread\hw7_templates\7-3\kmeans.cpp(129,58): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  main.vcxproj -> E:\cs100\2022\3-thread\hw7_templates\7-3\Debug\main.exe

@@ -1,0 +1,9 @@
+﻿tests.obj : error LNK2019: 无法解析的外部符号 "public: __cdecl Matrix<double>::Matrix<double>(unsigned int,unsigned int,double const &)" (??0?$Matrix@N@@QEAA@IIAEBN@Z)，函数 "void __cdecl TestDouble(void)" (?TestDouble@@YAXXZ) 中引用了该符号
+tests.obj : error LNK2019: 无法解析的外部符号 "public: double & __cdecl Matrix<double>::operator()(unsigned int,unsigned int)" (??R?$Matrix@N@@QEAAAEANII@Z)，函数 "void __cdecl TestDouble(void)" (?TestDouble@@YAXXZ) 中引用了该符号
+tests.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl Matrix<double>::Print(void)" (?Print@?$Matrix@N@@QEAAXXZ)，函数 "void __cdecl TestDouble(void)" (?TestDouble@@YAXXZ) 中引用了该符号
+tests.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl Matrix<double>::GaussJordan(void)" (?GaussJordan@?$Matrix@N@@QEAAXXZ)，函数 "void __cdecl TestDouble(void)" (?TestDouble@@YAXXZ) 中引用了该符号
+tests.obj : error LNK2019: 无法解析的外部符号 "public: __cdecl Matrix<class Rational>::Matrix<class Rational>(unsigned int,unsigned int,class Rational const &)" (??0?$Matrix@VRational@@@@QEAA@IIAEBVRational@@@Z)，函数 "void __cdecl TestRational(void)" (?TestRational@@YAXXZ) 中引用了该符号
+tests.obj : error LNK2019: 无法解析的外部符号 "public: class Rational & __cdecl Matrix<class Rational>::operator()(unsigned int,unsigned int)" (??R?$Matrix@VRational@@@@QEAAAEAVRational@@II@Z)，函数 "void __cdecl TestRational(void)" (?TestRational@@YAXXZ) 中引用了该符号
+tests.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl Matrix<class Rational>::Print(void)" (?Print@?$Matrix@VRational@@@@QEAAXXZ)，函数 "void __cdecl TestRational(void)" (?TestRational@@YAXXZ) 中引用了该符号
+tests.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl Matrix<class Rational>::GaussJordan(void)" (?GaussJordan@?$Matrix@VRational@@@@QEAAXXZ)，函数 "void __cdecl TestRational(void)" (?TestRational@@YAXXZ) 中引用了该符号
+E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\Build\Debug\main.exe : fatal error LNK1120: 8 个无法解析的外部命令

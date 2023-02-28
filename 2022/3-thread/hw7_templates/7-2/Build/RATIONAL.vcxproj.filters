@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\rational.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\rational.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\matrix.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{073E0028-FA8E-3671-B234-D54572DDA7B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1239D2A9-3A7A-318C-92F9-B5410B557522}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

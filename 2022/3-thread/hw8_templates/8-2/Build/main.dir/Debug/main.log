@@ -1,0 +1,7 @@
+﻿cl : 命令行  warning D9002: 忽略未知选项“-std=c++14”
+  test_lambdas.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\ostream(414,1): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\ostream(407,1): message : 在编译 类 模板 成员函数“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”时
+E:\cs100\2022\3-thread\hw8_templates\8-2\test_lambdas.cpp(15,53): message : 查看对正在编译的函数 模板 实例化“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”的引用
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\ostream(671,75): message : 查看对正在编译的 类 模板 实例化“std::basic_ostream<char,std::char_traits<char>>”的引用
+  main.vcxproj -> E:\cs100\2022\3-thread\hw8_templates\8-2\Debug\main.exe

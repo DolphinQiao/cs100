@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 2.8.12)
+SET(CMAKE_CXX_STANDARD 11)
+SET(exe_name kmeans)
+project(${exe_name})
+
+SET(CMAKE_BUILD_TYPE "Release")
+SET(CMAKE_CXX_FLAGS_DEBUG "-O3 -Wall -pthread")
+SET(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -pthread")
+
+FILE(GLOB SRC_LIST_CPP ${PROJECT_SOURCE_DIR}/*.cpp)
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/)
+ADD_EXECUTABLE(${exe_name} ${SRC_LIST_CPP})

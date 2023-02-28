@@ -1,0 +1,4 @@
+﻿  Building Custom Rule E:/cs100/2022/3-多线程和模板编程/hw7_templates/7-1/CMakeLists.txt
+  rational.cpp
+E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-1\rational.cpp(124,60): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+  static_lib.vcxproj -> E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-1\Build\Debug\static_lib.lib

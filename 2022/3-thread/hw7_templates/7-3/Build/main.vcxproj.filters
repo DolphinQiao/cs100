@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\cs100\2022\3-thread\hw7_templates\7-3\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\cs100\2022\3-thread\hw7_templates\7-3\kmeans.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\cs100\2022\3-thread\hw7_templates\7-3\kmeans.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\cs100\2022\3-thread\hw7_templates\7-3\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C0FF620D-FB49-36FD-BB1E-14544C2DB4F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2AB003F0-E67A-3AB8-B54B-DFA10B52C89F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

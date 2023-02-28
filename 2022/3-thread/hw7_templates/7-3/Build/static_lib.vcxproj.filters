@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-3\kmeans.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-3\kmeans.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-3\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A3260048-4071-3BDF-B68F-728E7997F705}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{52DE255A-E550-3B9E-B32C-E7D3B6FFCB0B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

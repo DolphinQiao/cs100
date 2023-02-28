@@ -1,0 +1,5 @@
+﻿cl : 命令行  warning D9002: 忽略未知选项“-std=c++14”
+  test_polynomials.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\ostream(774,1): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+E:\cs100\2022\3-thread\hw8_templates\8-1\test_polynomials.cpp(167,28): message : 查看对正在编译的函数 模板 实例化“std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)”的引用
+  main.vcxproj -> E:\cs100\2022\3-thread\hw8_templates\8-1\Debug\main.exe

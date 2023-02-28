@@ -1,0 +1,3 @@
+E:/cs100/2022/3-thread/hw8_templates/8-2/Build/CMakeFiles/main.dir
+E:/cs100/2022/3-thread/hw8_templates/8-2/Build/CMakeFiles/ALL_BUILD.dir
+E:/cs100/2022/3-thread/hw8_templates/8-2/Build/CMakeFiles/ZERO_CHECK.dir

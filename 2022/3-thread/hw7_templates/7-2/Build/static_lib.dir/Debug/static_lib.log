@@ -1,0 +1,7 @@
+﻿  matrix.cpp
+E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\matrix.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\matrix.cpp(16,16): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\matrix.cpp(17,2): message : 查看对正在编译的 类 模板 实例化“Matrix<T>”的引用
+E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\matrix.cpp(16,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\matrix.cpp(16,1): error C2238: 意外的标记位于“;”之前
+E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\matrix.cpp(22,1): warning C5037: Matrix<T>::Matrix: 类模板的成员的外部定义不得具有默认参数

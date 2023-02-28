@@ -1,0 +1,10 @@
+^E:\CS100\2022\3-多线程和模板编程\HW7_TEMPLATES\7-3\BUILD\CMAKEFILES\2099D082BFAD6F448383F07E60247B0A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/cs100/2022/3-多线程和模板编程/hw7_templates/7-3 -BE:/cs100/2022/3-多线程和模板编程/hw7_templates/7-3/Build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/cs100/2022/3-多线程和模板编程/hw7_templates/7-3/Build/kmeans.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

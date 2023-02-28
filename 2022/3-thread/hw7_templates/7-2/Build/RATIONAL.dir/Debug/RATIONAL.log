@@ -1,0 +1,5 @@
+﻿  Building Custom Rule E:/cs100/2022/3-多线程和模板编程/hw7_templates/7-2/CMakeLists.txt
+  matrix.cpp
+E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\matrix.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\matrix.cpp(6,1): warning C5037: Matrix<T>::Matrix: 类模板的成员的外部定义不得具有默认参数
+  RATIONAL.vcxproj -> E:\cs100\2022\3-多线程和模板编程\hw7_templates\7-2\Build\Debug\RATIONAL.lib
