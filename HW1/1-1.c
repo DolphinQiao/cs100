@@ -6,7 +6,6 @@ int main()
 
 	int num;
 	int sum;
-
 	printf("How many students are there?\n");
 	scanf("%d", &num);
 	printf("What are their scores?\n");
