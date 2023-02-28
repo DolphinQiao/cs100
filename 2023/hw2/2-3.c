@@ -34,9 +34,13 @@ int main()
   }
   for(int i = 0; i < len_max; ++i)
   {
-    if(c == '+') ans[i] = a[len_a - i - 1] + b[len_b - i - 1];
-    if(flag==0&&c == '-') ans[i] = a[len_a - i - 1] - b[len_b - i - 1];
-    if(flag==1&&c == '-') ans[i] = b[len_b - i - 1] - a[len_a - i - 1];
+    ans [i] = 0;
+    if(c == '+'&&len_a - i - 1 >= 0) ans[i] += a[len_a - i - 1];
+    if(c == '+'&&len_b - i - 1 >= 0) ans[i] += b[len_b - i - 1];
+    if(flag==0&&c == '-'&&len_a - i - 1 >= 0) ans[i] += a[len_a - i - 1];
+    if(flag==0&&c == '-'&&len_b - i - 1 >= 0) ans[i] -= b[len_b - i - 1];
+    if(flag==1&&c == '-'&&len_b - i - 1 >= 0) ans[i] += b[len_b - i - 1];
+    if(flag==1&&c == '-'&&len_a - i - 1 >= 0) ans[i] -= a[len_a - i - 1];
     //printf("%d ", ans[i]);
   }
   int up = 0;
@@ -52,7 +56,15 @@ int main()
     ans[i] %= 16;
     //printf("%d ", ans[i]);
   }
-  int len_ans = a[len_max + 1] != 0? len_max + 1 : len_max;;
+  int len_ans = 0;
+  for(int i = len_max; i >= 0; --i)
+  {
+    if(ans[i] != 0)
+    {
+      len_ans = i + 1;
+      break;
+    }
+  }
   len_max = len_max + 1;
 
   for(int i = 0; i < len_a; ++i)

@@ -27,17 +27,22 @@ int main()
   if(delta < 0)
   {
     printf("No solution.");
+    return 0;
   }else
   {
     delta = sqrt(delta);
     double solution1, solution2;
     solution1 = 1.0f * ((-b) - 1.0f * delta)/ 2.0f / a;
     solution2 = 1.0f * ((-b) + 1.0f * delta)/ 2.0f / a;
-    if(fabs(solution1 - solution2) < eps)
+    if(solution1 == solution2)
     {
       printf("x1 = x2 = %.3f", solution1);
+      return 0;
     }else{
-      printf("x1 = %.3f, x2 = %.3f", solution1,solution2);
+
+      if(solution1 < solution2) printf("x1 = %.3f, x2 = %.3f", solution1,solution2);
+      else printf("x1 = %.3f, x2 = %.3f", solution2, solution1);
+      return 0;
     }
   }
   return 0;
