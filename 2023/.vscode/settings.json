@@ -1,5 +1,11 @@
 {
+<<<<<<< HEAD
   "files.associations": {
     "iostream": "cpp"
   }
+=======
+    "files.associations": {
+        "stdio.h": "c"
+    }
+>>>>>>> b66bd157a71b29cfc6a5a47626ea157f2116f498
 }
