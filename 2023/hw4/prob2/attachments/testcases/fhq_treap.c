@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../memcheck.h"
+#include "4-2.h"
 
 struct treap_node {
   struct treap_node *left_child, *right_child;
