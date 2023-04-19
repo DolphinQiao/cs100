@@ -49,7 +49,7 @@ public:
      * @param neighbors
      * @return int
      */
-    virtual int CountAliveNeighbors(const CellNeighbors &neighbors) const;
+    int CountAliveNeighbors(const CellNeighbors &neighbors) const;
 
     /**
      * @brief Get the Rule Name object
@@ -68,8 +68,23 @@ public:
  * may need to be overriden.
  *
  */
-class LifeRuleColorised
+class LifeRuleColorised: public LifeRuleBase
 {
+public:
+    LifeRuleColorised() = default;
+    virtual ~LifeRuleColorised() = default;
+    /**
+     * @brief Determines the next state of a cell `current`, based on the current state and the number of live neighbors
+     *
+     * 1. Any live cell with fewer than two live neighbours dies, as if caused by under-population.
+     * 2. Any live cell with two or three live neighbours lives on to the next generation.
+     * 3. Any live cell with more than three live neighbours dies, as if by over-population.
+     * 4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+     *
+     * @param current A pointor to a cell to be updated
+     * @param neighbors a vector of `CellPointer`, containing all the neighbors of the cell we working on. You need to count the number of living cells in neighbors to determine the next state.
+     */
+    virtual void DetermineNextState(const CellPointer &current, const CellNeighbors &neighbors) override;
 
     /**
      * @brief Get the Rule Name
@@ -79,6 +94,7 @@ class LifeRuleColorised
      * @return const std::string, the name of the rule
      */
     virtual const std::string GetRuleName() const { return "Colorised"; } // DO NOT CHANGE THIS FUNCTION
+
 };
 
 /**
@@ -90,8 +106,12 @@ class LifeRuleColorised
  * may need to be overriden.
  *
  */
-class LifeRuleExtended
+class LifeRuleExtended : public LifeRuleBase
 {
+public:
+    LifeRuleExtended() = default;
+    virtual ~LifeRuleExtended() = default;
+    virtual CellNeighbors GetNeighbors(const GameWorld *const game_world, const int x, const int y) const override;
     /**
      * @brief Get the Rule Name
      * 
@@ -112,8 +132,12 @@ class LifeRuleExtended
  * may need to be overriden.
  * 
  */
-class LifeRuleWeighted
+class LifeRuleWeighted : public LifeRuleExtended
 {
+public:
+    LifeRuleWeighted() = default;
+    virtual ~LifeRuleWeighted() = default;
+    virtual void DetermineNextState(const CellPointer &current, const CellNeighbors &neighbors);
     /**
      * @brief Get the Rule Name
      * 
@@ -133,8 +157,12 @@ class LifeRuleWeighted
  * may need to be overriden.
  *
  */
-class LifeRuleGenerations
+class LifeRuleGenerations: public LifeRuleBase
 {
+public:
+    LifeRuleGenerations() = default;
+    virtual ~LifeRuleGenerations() = default;
+    virtual void DetermineNextState(const CellPointer &current, const CellNeighbors &neighbors) override;
     /**
      * @brief Get the Rule Name
      * 
