@@ -34,13 +34,6 @@ public:
 
   reference operator[](size_type);
   const_reference operator[](size_type) const;
-  friend bool operator==(  Dynarray &a,   Dynarray &b) ;
-  friend bool operator<(  Dynarray &a,   Dynarray &b) ;
-  friend bool operator>(  Dynarray &a,   Dynarray &b) ;
-  friend bool operator>=(  Dynarray &a,   Dynarray &b) ;
-  friend bool operator<=(  Dynarray &a,   Dynarray &b) ;
-  friend bool operator!=(  Dynarray &a,   Dynarray &b) ;
-  friend std::ostream& operator<<(std::ostream& os,   Dynarray &a);
 private:
   Dynarray::pointer m_storage;
   Dynarray::size_type m_length;
@@ -142,7 +135,7 @@ Dynarray::const_reference Dynarray::operator[](size_type i) const
   return m_storage[i];
 }
 
-bool operator==( Dynarray &a, Dynarray &b) 
+bool operator==(const Dynarray &a, const Dynarray &b) 
 {
   if(a.empty() && b.empty()) return true;
   if(a.size() != b.size()) return false;
@@ -153,41 +146,44 @@ bool operator==( Dynarray &a, Dynarray &b)
   return true;
 }
 
-bool operator<( Dynarray &a,  Dynarray &b) 
+bool operator<(const Dynarray &a, const Dynarray &b) 
 {
-  if(a.size() == 0 && b.size() != 0) return true;
-  if(a.size() != 0 && b.size() == 0) return false;
-  auto min_size = std::min(a.size(), b.size());
+  if(a.empty() && b.empty()) return false;
+  if(a.empty() && !b.empty()) return true;
+  if(!a.empty() && b.empty()) return false;
+  Dynarray::size_type min_size = std::min(a.size(), b.size());
   for(Dynarray::size_type i = 0; i < min_size; ++i)
   {
     if(a[i] < b[i]) return true;
     if(a[i] > b[i]) return false;
   }
+  if(a.size() == b.size()) return false;
   return (min_size == a.size());
 }
 
-bool operator!=( Dynarray &a,  Dynarray &b) 
+bool operator!=(const Dynarray &a, const Dynarray &b) 
 {
   return !(a == b);
 }
 
-bool operator>=( Dynarray &a,  Dynarray &b) 
+bool operator>=(const Dynarray &a, const Dynarray &b) 
 {
   return !(a < b);
 }
 
-bool operator<=( Dynarray &a,  Dynarray &b) 
+bool operator<=(const Dynarray &a, const Dynarray &b) 
 {
-  return ((a < b) || (a == b));
+  return !(b < a);
 }
 
-bool operator>(Dynarray &a,  Dynarray &b) 
+bool operator>(const Dynarray &a, const Dynarray &b) 
 {
   return !(a <= b);
 }
 
-std::ostream& operator<<(std::ostream& os,  Dynarray& a) 
+std::ostream& operator<<(std::ostream& os, const Dynarray& a) 
 {
+  if(a.empty()) return os << "[]";
   os << "[";
   for(Dynarray::size_type i = 0; i < a.size() - 1; ++i)
   {
