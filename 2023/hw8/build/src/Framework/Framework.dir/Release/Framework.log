@@ -1,0 +1,7 @@
+﻿  Building Custom Rule E:/cs100/2023/hw8/src/Framework/CMakeLists.txt
+  ObjectBase.cpp
+  WorldBase.cpp
+  GameManager.cpp
+  SpriteManager.cpp
+  正在生成代码...
+  Framework.vcxproj -> E:\cs100\2023\hw8\build\lib\Release\Framework.lib

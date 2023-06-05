@@ -1,0 +1,10 @@
+^E:\CS100\2023\HW8\SRC\ZOMBIE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/cs100/2023/hw8 -BE:/cs100/2023/hw8/build --check-stamp-file E:/cs100/2023/hw8/build/src/Zombie/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
